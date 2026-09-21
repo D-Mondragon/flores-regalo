@@ -21,55 +21,7 @@ body {
   position: relative;
 }
 
-.floating-letter {
-  position: fixed;
-  left: 7vw;
-  top: 14vh;
-  width: 92px;
-  height: 92px;
-  z-index: 300;
-  cursor: pointer;
-  user-select: none;
-  pointer-events: auto;
-  opacity: 1;
-  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.7));
-  animation: driftLetter 12s ease-in-out infinite alternate;
-  will-change: transform;
-}
 
-@keyframes driftLetter {
-  0% {
-    transform: translate(0, 0) rotate(-10deg) scale(1);
-  }
-  20% {
-    transform: translate(140px, 30px) rotate(6deg) scale(1.04);
-  }
-  40% {
-    transform: translate(260px, 80px) rotate(-5deg) scale(1.08);
-  }
-  60% {
-    transform: translate(160px, 140px) rotate(8deg) scale(1.06);
-  }
-  80% {
-    transform: translate(40px, 60px) rotate(-6deg) scale(1.02);
-  }
-  100% {
-    transform: translate(80px, 20px) rotate(8deg) scale(1.09);
-  }
-}
-
-.floating-letter:hover {
-  transform: scale(1.12) rotate(5deg);
-  filter: drop-shadow(0 0 28px rgba(255, 241, 147, 0.9));
-}
-
-.floating-letter img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
-  pointer-events: none;
-}
 
 .message-modal {
   position: fixed;
